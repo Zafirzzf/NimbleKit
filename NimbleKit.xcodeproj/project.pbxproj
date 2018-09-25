@@ -12,7 +12,8 @@
 		181D3ACE2154BA260068E20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D3ACC2154BA260068E20B /* Main.storyboard */; };
 		181D3AD32154BA280068E20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D3AD22154BA280068E20B /* Assets.xcassets */; };
 		181D3AD62154BA280068E20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D3AD42154BA280068E20B /* LaunchScreen.storyboard */; };
-		181D3ADE2154BA6B0068E20B /* NimbleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D3ADD2154BA6B0068E20B /* NimbleUI.swift */; };
+		18F42AA92159FF530060D97A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F42AA82159FF530060D97A /* ViewController2.swift */; };
+		9E8763AA20E5FB69BAB95FCD /* Pods_NimbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD73C3AA8D8B87110E38398 /* Pods_NimbleKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,10 @@
 		181D3AD22154BA280068E20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181D3AD52154BA280068E20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181D3AD72154BA280068E20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		181D3ADD2154BA6B0068E20B /* NimbleUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleUI.swift; sourceTree = "<group>"; };
+		18F42AA82159FF530060D97A /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		1FD73C3AA8D8B87110E38398 /* Pods_NimbleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24E8D0E1EC446BEACA685E3 /* Pods-NimbleKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimbleKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NimbleKit/Pods-NimbleKit.debug.xcconfig"; sourceTree = "<group>"; };
+		E5F5F603B891967E2B1E5F11 /* Pods-NimbleKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimbleKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-NimbleKit/Pods-NimbleKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8763AA20E5FB69BAB95FCD /* Pods_NimbleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 				181D3AC72154BA260068E20B /* NimbleKit */,
 				181D3AC62154BA260068E20B /* Products */,
 				AA98F2C9ABE9B3BCD33623C5 /* Frameworks */,
+				9F8F4846D2BFC32DDA7D369B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +63,24 @@
 		181D3AC72154BA260068E20B /* NimbleKit */ = {
 			isa = PBXGroup;
 			children = (
-				181D3ADD2154BA6B0068E20B /* NimbleUI.swift */,
 				181D3AC82154BA260068E20B /* AppDelegate.swift */,
 				181D3ACA2154BA260068E20B /* ViewController.swift */,
+				18F42AA82159FF530060D97A /* ViewController2.swift */,
 				181D3ACC2154BA260068E20B /* Main.storyboard */,
 				181D3AD22154BA280068E20B /* Assets.xcassets */,
 				181D3AD42154BA280068E20B /* LaunchScreen.storyboard */,
 				181D3AD72154BA280068E20B /* Info.plist */,
 			);
 			path = NimbleKit;
+			sourceTree = "<group>";
+		};
+		9F8F4846D2BFC32DDA7D369B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E24E8D0E1EC446BEACA685E3 /* Pods-NimbleKit.debug.xcconfig */,
+				E5F5F603B891967E2B1E5F11 /* Pods-NimbleKit.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AA98F2C9ABE9B3BCD33623C5 /* Frameworks */ = {
@@ -84,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181D3ADA2154BA280068E20B /* Build configuration list for PBXNativeTarget "NimbleKit" */;
 			buildPhases = (
+				C0D1E75ED21522DA9BB1B333 /* [CP] Check Pods Manifest.lock */,
 				181D3AC12154BA260068E20B /* Sources */,
 				181D3AC22154BA260068E20B /* Frameworks */,
 				181D3AC32154BA260068E20B /* Resources */,
+				A62DD732E155C726C1BBBFF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,13 +159,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A62DD732E155C726C1BBBFF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NimbleKit/Pods-NimbleKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NimbleKit/NimbleKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NimbleKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NimbleKit/Pods-NimbleKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0D1E75ED21522DA9BB1B333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NimbleKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		181D3AC12154BA260068E20B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				181D3ACB2154BA260068E20B /* ViewController.swift in Sources */,
-				181D3ADE2154BA6B0068E20B /* NimbleUI.swift in Sources */,
+				18F42AA92159FF530060D97A /* ViewController2.swift in Sources */,
 				181D3AC92154BA260068E20B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,15 +349,13 @@
 		};
 		181D3ADB2154BA280068E20B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24E8D0E1EC446BEACA685E3 /* Pods-NimbleKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NimbleKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MIx.NimbleKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -312,15 +365,13 @@
 		};
 		181D3ADC2154BA280068E20B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F5F603B891967E2B1E5F11 /* Pods-NimbleKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NimbleKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MIx.NimbleKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

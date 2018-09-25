@@ -1,0 +1,16 @@
+PODS:
+  - NimbleKit (0.0.1)
+
+DEPENDENCIES:
+  - NimbleKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - NimbleKit
+
+SPEC CHECKSUMS:
+  NimbleKit: ac767ce2caf6075ac33337ff14eb2b88efe14588
+
+PODFILE CHECKSUM: 2d7c8a24b3adb346226869e9bb79e0506e6b2acb
+
+COCOAPODS: 1.5.0

@@ -10,13 +10,13 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Zafirzzf/NimbleKit"
   s.license      = "MIT"
   s.author             = { "Zaifrzzf" => "Zoolofty@163.com" }
-  s.source       = { :git => "https://github.com/Zafirzzf/NimbleKit.git", :tag => "v1.0.1" }
+  s.source       = { :git => "https://github.com/Zafirzzf/NimbleKit.git", :tag => "v1.0.3" }
   s.source_files  = "NimbleKit/*.swift"
   s.exclude_files = "Classes/Exclude"
   s.ios.deployment_target  = '9.0'
   s.swift_version = '4.0'
   s.ios.framework  = 'UIKit'
-  # s.public_header_files = "Classes/**/*.swift"
+  # s.public_header_files = "Classes/NimbleKit/NimbleUI.swift"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
