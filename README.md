@@ -27,7 +27,7 @@ let editButton = UIButton().nb
 	.titleColor(UIColor.red)
 	.titleColor(UIColor.brown, state: .selected)
 	.backgroundColor(UIColor.red)
-	.cornerRadius(10)
+	.cornerRadius(10).base
 	....
 ```
 
@@ -59,7 +59,7 @@ override func viewDidLoad() {
 ```
 class ViewController: UIViewController {
 
-let label = UILabel().nb.textColor(.white).text("aaa")
+let label = UILabel().nb.textColor(.white).text("aaa").base
 
 override func viewDidLoad() {
 }
@@ -81,5 +81,5 @@ view.center.y = 150
 ### now, for any UIView
 
 ```
-view.nb.width(100).height(100).centerX(150).centerY(150)
+view.nb.width(100).height(100).centerX(150).centerY(150).base
 ```
