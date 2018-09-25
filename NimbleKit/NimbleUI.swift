@@ -7,21 +7,21 @@
 //
 
 import UIKit
-protocol NimbleCompatible {
+public protocol NimbleCompatible {
     associatedtype Compatible
     var nb: Compatible { get }
 }
 extension UIView: NimbleCompatible {}
 
 extension NimbleCompatible {
-    var nb: NimbleUI<Self> {
+    public var nb: NimbleUI<Self> {
         return NimbleUI(self)
     }
 }
 
-final class NimbleUI<Type> {
-    let base: Type
-    init(_ type: Type) {
+public final class NimbleUI<Type> {
+    public let base: Type
+    public init(_ type: Type) {
         self.base = type
     }
 }
@@ -29,76 +29,87 @@ final class NimbleUI<Type> {
 //MARK: Size And Origin
 extension NimbleUI where Type: UIView {
     @discardableResult
-    func frameRect(_ x: CGFloat,
+    public func frameRect(_ x: CGFloat,
                                   _ y: CGFloat,
                                   _ width: CGFloat,
-                                  _ height: CGFloat) -> Type {
+                                  _ height: CGFloat) -> Self {
         base.frame = CGRect(x: x, y: y, width: width, height: height)
-        return base
+        return self
     }
     
-    func originX(_ x: CGFloat) -> Type {
+    @discardableResult
+    public func originX(_ x: CGFloat) -> Self {
         base.frame.origin.x = x
-        return base
+        return self
     }
     
-    func originY(_ y: CGFloat) -> Type {
+    @discardableResult
+    public func originY(_ y: CGFloat) -> Self {
         base.frame.origin.y = y
-        return base
+        return self
     }
     
-    func width(_ width: CGFloat) -> Type {
+    @discardableResult
+    public func width(_ width: CGFloat) -> Self {
         base.frame.size.width = width
-        return base
+        return self
     }
     
-    func height(_ height: CGFloat) -> Type {
+    @discardableResult
+    public func height(_ height: CGFloat) -> Self {
         base.frame.size.height = height
-        return base
+        return self
     }
     
-    func centerX(_ value: CGFloat) -> Type {
+    @discardableResult
+    public func centerX(_ value: CGFloat) -> Self {
         base.center.x = value
-        return base
+        return self
     }
     
-    func centerY(_ value: CGFloat) -> Type {
+    @discardableResult
+    public func centerY(_ value: CGFloat) -> Self {
         base.center.y = value
-        return base
+        return self
     }
 }
 
 // MARK: - View State
 extension NimbleUI where Type: UIView {
-    
-    func backgroundColor(_ color: UIColor) -> Type {
+    @discardableResult
+    public func backgroundColor(_ color: UIColor) -> Self {
         base.backgroundColor = color
-        return base
+        return self
     }
     
-    func tintColor(_ color: UIColor) -> Type {
+    @discardableResult
+    public func tintColor(_ color: UIColor) -> Self {
         base.tintColor = color
-        return base
+        return self
     }
     
-    func hidden(_ isHidden: Bool) -> Type {
+    @discardableResult
+    public func hidden(_ isHidden: Bool) -> Self {
         base.isHidden = isHidden
-        return base
+        return self
     }
     
-    func alpha(_ alpha: CGFloat) -> Type {
+    @discardableResult
+    public func alpha(_ alpha: CGFloat) -> Self {
         base.alpha = alpha
-        return base
+        return self
     }
     
-    func clipsToBounds(_ clips: Bool) -> Type {
+    @discardableResult
+    public func clipsToBounds(_ clips: Bool) -> Self {
         base.clipsToBounds = clips
-        return base
+        return self
     }
     
-    func cornerRadius(_ number: CGFloat) -> Type {
+    @discardableResult
+    public func cornerRadius(_ number: CGFloat) -> Self {
         base.layer.cornerRadius = number
-        return base
+        return self
     }
 }
 
@@ -106,119 +117,136 @@ extension NimbleUI where Type: UIView {
 extension NimbleUI where Type: UILabel {
     
     @discardableResult
-        func text(_ text: String) -> Type {
+        public func text(_ text: String) -> Self {
         base.text = text
-        return base
+        return self
     }
     
-    func textColor(_ color: UIColor) -> UILabel {
+    @discardableResult
+    public func textColor(_ color: UIColor) -> Self {
         base.textColor = color
-        return base
+        return self
     }
     
-    func font(_ font: UIFont) -> UILabel {
+    @discardableResult
+    public func font(_ font: UIFont) -> Self {
         base.font = font
-        return base
+        return self
     }
     
-    func textAlignment(_ type: NSTextAlignment) -> UILabel {
+    @discardableResult
+    public func textAlignment(_ type: NSTextAlignment) -> Self {
         base.textAlignment = type
-        return base
+        return self
     }
     
-    func attributeText(_ text: NSAttributedString) -> UILabel {
+    @discardableResult
+    public func attributeText(_ text: NSAttributedString) -> Self {
         base.attributedText = text
-        return base
+        return self
     }
     
-    func numberOfLines(_ number: Int) -> UILabel {
+    @discardableResult
+    public func numberOfLines(_ number: Int) -> Self {
         base.numberOfLines = number
-        return base
+        return self
     }
     
-    func adjustFontSize(_ adjust: Bool) -> UILabel {
+    @discardableResult
+    public func adjustFontSize(_ adjust: Bool) -> Self {
         base.adjustsFontSizeToFitWidth = adjust
-        return base
+        return self
     }
 }
 
 // MARK: UIButton
 extension NimbleUI where Type: UIButton {
     @discardableResult
-    func title(_ text: String, state: UIControl.State = .normal) -> UIButton {
+    public func title(_ text: String, state: UIControl.State = .normal) -> Self {
         base.setTitle(text, for: state)
-        return base
+        return self
     }
     
-    func titleColor(_ color: UIColor, state: UIControl.State = .normal) -> UIButton {
+    @discardableResult
+    public func titleColor(_ color: UIColor, state: UIControl.State = .normal) -> Self {
         base.setTitleColor(color, for: .normal)
-        return base
+        return self
     }
     
-    func font(_ font: UIFont) -> UIButton {
+    @discardableResult
+    public func font(_ font: UIFont) -> Self {
         base.titleLabel?.font = font
-        return base
+        return self
     }
     
-    func image(_ image: UIImage, state: UIControl.State = .normal) -> UIButton {
+    @discardableResult
+    public func image(_ image: UIImage, state: UIControl.State = .normal) -> Self {
         base.setImage(image, for: state)
-        return base
+        return self
     }
     
-    func backgroundImage(_ image: UIImage, state: UIControl.State = .normal) -> UIButton {
+    @discardableResult
+    public func backgroundImage(_ image: UIImage, state: UIControl.State = .normal) -> Self {
         base.setBackgroundImage(image, for: state)
-        return base
+        return self
     }
 }
 
 // MARK: - UIImageView
 extension NimbleUI where Type: UIImageView {
-    @discardableResult func image(_ image: UIImage) -> UIImageView {
+    @discardableResult
+    public func image(_ image: UIImage) -> Self {
         base.image = image
-        return base
+        return self
     }
     
-    @discardableResult func highlightImage(_ image: UIImage) -> UIImageView {
+    @discardableResult
+    public func highlightImage(_ image: UIImage) -> Self {
         base.highlightedImage = image
-        return base
+        return self
     }
 }
 
 // MARK: - UITableView
 extension NimbleUI where Type: UITableView {
     @discardableResult
-    func dataSource(_ target: UITableViewDataSource) -> Type {
+    public func dataSource(_ target: UITableViewDataSource) -> Self {
         base.dataSource = target
-        return base
+        return self
     }
     
-    func delegate(_ target: UITableViewDelegate) -> Type {
+    @discardableResult
+    public func delegate(_ target: UITableViewDelegate) -> Self {
         base.delegate = target
-        return base
+        return self
     }
     
-    func rowHeight(_ height: CGFloat) -> Type {
+    @discardableResult
+    public func rowHeight(_ height: CGFloat) -> Self {
         base.rowHeight = height
-        return base
+        return self
     }
     
-    func estimatedRowHeight(_ height: CGFloat) -> Type {
+    @discardableResult
+    public func estimatedRowHeight(_ height: CGFloat) -> Self {
         base.estimatedRowHeight = height
-        return base
+        return self
     }
 }
 
 extension NimbleUI where Type: UITextField {
-    @discardableResult func title(_ text: String) -> UITextField {
+    @discardableResult
+    public func title(_ text: String) -> Self {
         base.text = text
-        return base
+        return self
     }
 }
 
 extension NimbleUI where Type: UITextView {
-    @discardableResult func title(_ text: String) -> UITextView {
+    @discardableResult
+    public func title(_ text: String) -> Self {
         base.text = text
-        return base
+        return self
     }
 }
 

@@ -12,8 +12,8 @@
 		181D3ACE2154BA260068E20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D3ACC2154BA260068E20B /* Main.storyboard */; };
 		181D3AD32154BA280068E20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D3AD22154BA280068E20B /* Assets.xcassets */; };
 		181D3AD62154BA280068E20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D3AD42154BA280068E20B /* LaunchScreen.storyboard */; };
-		18F42AD6215A0A0E0060D97A /* NimbleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F42AD5215A0A0E0060D97A /* NimbleUI.swift */; };
-		9E8763AA20E5FB69BAB95FCD /* Pods_NimbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD73C3AA8D8B87110E38398 /* Pods_NimbleKit.framework */; };
+		18F42AFF215A0F650060D97A /* NimbleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F42AFE215A0F650060D97A /* NimbleUI.swift */; };
+		1D5BD7B90D7D745174A3906D /* Pods_NimbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD73C3AA8D8B87110E38398 /* Pods_NimbleKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		181D3AD22154BA280068E20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181D3AD52154BA280068E20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181D3AD72154BA280068E20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18F42AD5215A0A0E0060D97A /* NimbleUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NimbleUI.swift; path = ../Pods/NimbleKit/NimbleKit/NimbleUI.swift; sourceTree = "<group>"; };
+		18F42AFE215A0F650060D97A /* NimbleUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleUI.swift; sourceTree = "<group>"; };
 		1FD73C3AA8D8B87110E38398 /* Pods_NimbleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24E8D0E1EC446BEACA685E3 /* Pods-NimbleKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimbleKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NimbleKit/Pods-NimbleKit.debug.xcconfig"; sourceTree = "<group>"; };
 		E5F5F603B891967E2B1E5F11 /* Pods-NimbleKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NimbleKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-NimbleKit/Pods-NimbleKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E8763AA20E5FB69BAB95FCD /* Pods_NimbleKit.framework in Frameworks */,
+				1D5BD7B90D7D745174A3906D /* Pods_NimbleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				181D3AC82154BA260068E20B /* AppDelegate.swift */,
+				18F42AFE215A0F650060D97A /* NimbleUI.swift */,
 				181D3ACA2154BA260068E20B /* ViewController.swift */,
-				18F42AD5215A0A0E0060D97A /* NimbleUI.swift */,
 				181D3ACC2154BA260068E20B /* Main.storyboard */,
 				181D3AD22154BA280068E20B /* Assets.xcassets */,
 				181D3AD42154BA280068E20B /* LaunchScreen.storyboard */,
@@ -98,11 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181D3ADA2154BA280068E20B /* Build configuration list for PBXNativeTarget "NimbleKit" */;
 			buildPhases = (
-				C0D1E75ED21522DA9BB1B333 /* [CP] Check Pods Manifest.lock */,
+				5E797A48414BBC04D79B6A56 /* [CP] Check Pods Manifest.lock */,
 				181D3AC12154BA260068E20B /* Sources */,
 				181D3AC22154BA260068E20B /* Frameworks */,
 				181D3AC32154BA260068E20B /* Resources */,
-				14BAAB92F6D9D06CB3B1D44D /* [CP] Embed Pods Frameworks */,
+				35614ADE3FAF3F5C73C1AA19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,7 +160,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14BAAB92F6D9D06CB3B1D44D /* [CP] Embed Pods Frameworks */ = {
+		35614ADE3FAF3F5C73C1AA19 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +178,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NimbleKit/Pods-NimbleKit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C0D1E75ED21522DA9BB1B333 /* [CP] Check Pods Manifest.lock */ = {
+		5E797A48414BBC04D79B6A56 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181D3ACB2154BA260068E20B /* ViewController.swift in Sources */,
-				18F42AD6215A0A0E0060D97A /* NimbleUI.swift in Sources */,
+				18F42AFF215A0F650060D97A /* NimbleUI.swift in Sources */,
 				181D3AC92154BA260068E20B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

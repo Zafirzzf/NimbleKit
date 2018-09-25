@@ -20,7 +20,7 @@ editButton.layer.cornerRadius = 10
 ### after
 
 ```
-let editButton = UIButton()
+let editButton = UIButton().nb
 	.frameRect(0, 0, 50, 50)
 	.title("编辑")
 	.title("完成", state: .selected)
@@ -59,7 +59,7 @@ override func viewDidLoad() {
 ```
 class ViewController: UIViewController {
 
-let label = UILabel().textColor(.white).text("aaa")
+let label = UILabel().nb.textColor(.white).text("aaa")
 
 override func viewDidLoad() {
 }
@@ -81,5 +81,5 @@ view.center.y = 150
 ### now, for any UIView
 
 ```
-view.width(100).height(100).centerX(150).centerY(150)
+view.nb.width(100).height(100).centerX(150).centerY(150)
 ```
