@@ -1,5 +1,5 @@
 PODS:
-  - NimbleKit (0.0.1)
+  - NimbleKit (1.0.4)
 
 DEPENDENCIES:
   - NimbleKit
@@ -9,7 +9,7 @@ SPEC REPOS:
     - NimbleKit
 
 SPEC CHECKSUMS:
-  NimbleKit: ac767ce2caf6075ac33337ff14eb2b88efe14588
+  NimbleKit: 675a04f52acc459aabbe1d7e43d93b6c011266f4
 
 PODFILE CHECKSUM: 2d7c8a24b3adb346226869e9bb79e0506e6b2acb
 

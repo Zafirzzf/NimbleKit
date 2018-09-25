@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NimbleKit"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Quickly create UIKit."
   s.description  = <<-DESC
                     Quickly create UIKit.
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/Zafirzzf/NimbleKit"
   s.license      = "MIT"
   s.author             = { "Zaifrzzf" => "Zoolofty@163.com" }
-  s.source       = { :git => "https://github.com/Zafirzzf/NimbleKit.git", :tag => "v1.0.3" }
-  s.source_files  = "NimbleKit/*.swift"
+  s.source       = { :git => "https://github.com/Zafirzzf/NimbleKit.git", :tag => "v1.0.4" }
+  s.source_files  = "NimbleKit/NimbleUI.swift"
   s.exclude_files = "Classes/Exclude"
   s.ios.deployment_target  = '9.0'
   s.swift_version = '4.0'
