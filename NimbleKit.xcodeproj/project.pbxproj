@@ -10,7 +10,6 @@
 		181D3AC92154BA260068E20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D3AC82154BA260068E20B /* AppDelegate.swift */; };
 		181D3ACB2154BA260068E20B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D3ACA2154BA260068E20B /* ViewController.swift */; };
 		181D3ACE2154BA260068E20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D3ACC2154BA260068E20B /* Main.storyboard */; };
-		181D3AD12154BA260068E20B /* NimbleKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181D3ACF2154BA260068E20B /* NimbleKit.xcdatamodeld */; };
 		181D3AD32154BA280068E20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181D3AD22154BA280068E20B /* Assets.xcassets */; };
 		181D3AD62154BA280068E20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D3AD42154BA280068E20B /* LaunchScreen.storyboard */; };
 		181D3ADE2154BA6B0068E20B /* NimbleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D3ADD2154BA6B0068E20B /* NimbleUI.swift */; };
@@ -21,11 +20,11 @@
 		181D3AC82154BA260068E20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181D3ACA2154BA260068E20B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		181D3ACD2154BA260068E20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		181D3AD02154BA260068E20B /* NimbleKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NimbleKit.xcdatamodel; sourceTree = "<group>"; };
 		181D3AD22154BA280068E20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181D3AD52154BA280068E20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		181D3AD72154BA280068E20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D3ADD2154BA6B0068E20B /* NimbleUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleUI.swift; sourceTree = "<group>"; };
+		1FD73C3AA8D8B87110E38398 /* Pods_NimbleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +43,7 @@
 			children = (
 				181D3AC72154BA260068E20B /* NimbleKit */,
 				181D3AC62154BA260068E20B /* Products */,
+				AA98F2C9ABE9B3BCD33623C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +65,16 @@
 				181D3AD22154BA280068E20B /* Assets.xcassets */,
 				181D3AD42154BA280068E20B /* LaunchScreen.storyboard */,
 				181D3AD72154BA280068E20B /* Info.plist */,
-				181D3ACF2154BA260068E20B /* NimbleKit.xcdatamodeld */,
 			);
 			path = NimbleKit;
+			sourceTree = "<group>";
+		};
+		AA98F2C9ABE9B3BCD33623C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FD73C3AA8D8B87110E38398 /* Pods_NimbleKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +150,6 @@
 			files = (
 				181D3ACB2154BA260068E20B /* ViewController.swift in Sources */,
 				181D3ADE2154BA6B0068E20B /* NimbleUI.swift in Sources */,
-				181D3AD12154BA260068E20B /* NimbleKit.xcdatamodeld in Sources */,
 				181D3AC92154BA260068E20B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +304,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MIx.NimbleKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,7 +321,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MIx.NimbleKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -342,19 +348,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		181D3ACF2154BA260068E20B /* NimbleKit.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				181D3AD02154BA260068E20B /* NimbleKit.xcdatamodel */,
-			);
-			currentVersion = 181D3AD02154BA260068E20B /* NimbleKit.xcdatamodel */;
-			path = NimbleKit.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 181D3ABD2154BA260068E20B /* Project object */;
 }
