@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NimbleKit"
-  s.version      = "0.0.1"
+  s.version      = "1.0.3"
   s.summary      = "Quickly create UIKit."
   s.description  = <<-DESC
                     Quickly create UIKit.
