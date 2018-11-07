@@ -3,6 +3,10 @@ A nimble way to setup View by Swift.  Say goodbye to "=".
 
 More flexible and convenient
 
+## CocoaPods
+
+`pod 'NimbleKit'`
+
 ## Setup a button
 ### before
 
