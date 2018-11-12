@@ -20,10 +20,11 @@ class ViewController: UIViewController {
             .title("完成", state: .selected)
             .titleColor(UIColor.red)
             .titleColor(UIColor.brown, state: .selected)
-            .backgroundColor(UIColor.red)
+            .backgroundColor(UIColor.red)            
             .cornerRadius(10).base
         let view = UIView()
         view.nb.width(100).height(100).centerX(150).centerY(150).base
+
     }
 }
 
