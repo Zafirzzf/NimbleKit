@@ -11,24 +11,17 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "NimbleKit"
-s.version      = "2.0"
-s.summary      = "A nimble way to setup View by Swift. Say goodbye to "=".
+s.version      = "2.0.1"
+s.summary      = "A nimble way to setup View by Swift."
 
 s.description  = <<-DESC
-A nimble way to setup View by Swift. Say goodbye to "=".
-
-More flexible and convenient
+    A nimble way to setup View by Swift, More flexible and convenient
 DESC
 s.homepage     = "https://github.com/Zafirzzf/NimbleKit"
 s.license      = { :type => "MIT", :file => "LICENSE" }
-s.author             = { "zhouzf" => "Zoolofty@163.com" }
-# Or just: s.author    = "zhouzf"
-# s.social_media_url   = "http://twitter.com/zhouzf"
-# s.platform     = :ios
-# s.platform     = :ios, "9.0"
+s.author       = { "zhouzf" => "Zoolofty@163.com" }
 s.ios.deployment_target  = '9.0'
 s.swift_version = '4.0'
-s.source       = { :git => "https://github.com/Zafirzzf/SwiftNotification.git", :tag => "v1.2" }
-s.source_files  = "Classes/*"
-
+s.source       = { :git => "https://github.com/Zafirzzf/NimbleKit.git", :tag => "v2.0.1" }
+s.source_files  = "NimbleKit/*"
 end
