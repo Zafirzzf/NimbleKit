@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "NimbleKit"
-s.version      = "2.0.1"
+s.version      = "2.0.2"
 s.summary      = "A nimble way to setup View by Swift."
 
 s.description  = <<-DESC
@@ -22,6 +22,6 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author       = { "zhouzf" => "Zoolofty@163.com" }
 s.ios.deployment_target  = '9.0'
 s.swift_version = '4.0'
-s.source       = { :git => "https://github.com/Zafirzzf/NimbleKit.git", :tag => "v2.0.1" }
+s.source       = { :git => "https://github.com/Zafirzzf/NimbleKit.git", :tag => "v2.0.2" }
 s.source_files  = "NimbleKit/*"
 end

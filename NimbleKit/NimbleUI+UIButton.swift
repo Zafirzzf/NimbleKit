@@ -94,6 +94,12 @@ extension NimbleUI where Type: UIButton {
         base.imageEdgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
         return self
     }
+    
+    @discardableResult
+    public func isSelected(_ sel: Bool) -> Self {
+        base.isSelected = sel
+        return self
+    }
 }
 
 
