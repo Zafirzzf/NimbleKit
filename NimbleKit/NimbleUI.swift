@@ -11,7 +11,9 @@ public protocol NimbleCompatible {
     associatedtype Compatible
     var nb: Compatible { get }
 }
+
 extension UIView: NimbleCompatible {}
+extension UINavigationItem: NimbleCompatible {}
 
 extension NimbleCompatible {
     public var nb: NimbleUI<Self> {
@@ -19,20 +21,13 @@ extension NimbleCompatible {
     }
 }
 
-public final class NimbleUI<Type> {
+public final class NimbleUI<Type: NimbleCompatible> {
     public let base: Type
     public init(_ type: Type) {
         self.base = type
     }
 }
 
-extension NimbleUI where Type: UITextField {
-    @discardableResult
-    public func title(_ text: String) -> Self {
-        base.text = text
-        return self
-    }
-}
 
 extension NimbleUI where Type: UITextView {
     @discardableResult

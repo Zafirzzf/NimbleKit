@@ -5,7 +5,7 @@
 //  Created by 周正飞 on 2018/11/12.
 //
 
-import Foundation
+import UIKit
 
 extension NimbleUI where Type: UIImageView {
     @discardableResult

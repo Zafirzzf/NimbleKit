@@ -5,7 +5,7 @@
 //  Created by 周正飞 on 2018/11/12.
 //
 
-import Foundation
+import UIKit
 
 extension NimbleUI where Type: UIButton {
     
@@ -100,24 +100,32 @@ extension NimbleUI where Type: UIButton {
         base.isSelected = sel
         return self
     }
-}
-
-
-/// 快捷方便的为按钮添加事件
-private var ButtonTouchKey: Void?
-extension UIButton {
     
-    typealias TouchedClosure = () -> Void
-    /// 快速添加事件
-    @discardableResult func touchEvent(closure: @escaping TouchedClosure) -> UIButton {
-        objc_setAssociatedObject(self, &ButtonTouchKey, closure, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-        self.addTarget(self, action: #selector(touchClick), for: .touchUpInside)
+    var actionProxy: ButtonActionpProxy? {
+        get {
+            return objc_getAssociatedObject(base, &ButtonTouchKey) as? ButtonActionpProxy
+        }
+        set {
+            objc_setAssociatedObject(base, &ButtonTouchKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    @discardableResult
+    public func whenTap(handler: @escaping () -> ()) -> Self {
+        actionProxy = ButtonActionpProxy(handler)
+        base.addTarget(actionProxy!, action: #selector(actionProxy!.buttonAcction), for: .touchUpInside)
         return self
     }
+}
+
+private var ButtonTouchKey: Void?
+
+class ButtonActionpProxy {
+    let handler: (() -> ())
+    init(_ handler: @escaping () -> ()) {
+        self.handler = handler
+    }
     
-    @objc private func touchClick() {
-        if let closure = objc_getAssociatedObject(self,&ButtonTouchKey) as? UIButton.TouchedClosure{
-            closure()
-        }
+    @objc func buttonAcction() {
+        handler()
     }
 }

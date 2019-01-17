@@ -3,135 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03879C23E54FFDE5770DE2049120A85D /* Pods-NimbleDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69936B167560343130118EC8AE460CF2 /* Pods-NimbleDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		147D6452F62D0EAE438AAE610A7EB64D /* Pods-NimbleDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 768405DB88C6F77DE06133CB48466631 /* Pods-NimbleDemo-dummy.m */; };
-		182FB9E221998F7100B26E56 /* Nimble+NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FB9DC21998F7100B26E56 /* Nimble+NavigationItem.swift */; };
-		182FB9E321998F7100B26E56 /* NimbleUI+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FB9DD21998F7100B26E56 /* NimbleUI+UIButton.swift */; };
-		182FB9E421998F7100B26E56 /* Nimble+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FB9DE21998F7100B26E56 /* Nimble+UIImageView.swift */; };
-		182FB9E521998F7100B26E56 /* NimbleUI+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FB9DF21998F7100B26E56 /* NimbleUI+UILabel.swift */; };
-		182FB9E621998F7100B26E56 /* NimbleUI+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FB9E021998F7100B26E56 /* NimbleUI+UIView.swift */; };
-		182FB9E721998F7100B26E56 /* NimbleUI+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FB9E121998F7100B26E56 /* NimbleUI+UITableView.swift */; };
-		184F5D110AA29C471D6C4E0AA9E4838A /* NimbleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4E83207AFFB6B604E38A140DFEF0C /* NimbleUI.swift */; };
-		237529255E6F3BF607872B20D80FAFDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		2E680B0FC488C77B35280FBC627AD037 /* NimbleKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F334A3F02D086D268E7615F819FD42 /* NimbleKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4913D93C80472716623387E58F98B652 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		72790399502B0635BD86602649BDA7DA /* NimbleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A64666B866182649ED54D9714DB611E2 /* NimbleKit-dummy.m */; };
-		C30682861BF904F007D51B2D6C640E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		2DF639AEFD2131999507A724705AA1A4 /* Pods-NimbleDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69936B167560343130118EC8AE460CF2 /* Pods-NimbleDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2739BDC91BED0F6BC2210DAFBE6A1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		D631C8C4D5EBF90C5C4CD3A20750DB89 /* Pods-NimbleDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 768405DB88C6F77DE06133CB48466631 /* Pods-NimbleDemo-dummy.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D21904A2E453B918FC7085BB414B4D3F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D159481E06D31F8A1880364E24590E88;
-			remoteInfo = NimbleKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		01F334A3F02D086D268E7615F819FD42 /* NimbleKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NimbleKit-umbrella.h"; sourceTree = "<group>"; };
-		182FB9DC21998F7100B26E56 /* Nimble+NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Nimble+NavigationItem.swift"; path = "NimbleKit/Nimble+NavigationItem.swift"; sourceTree = "<group>"; };
-		182FB9DD21998F7100B26E56 /* NimbleUI+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NimbleUI+UIButton.swift"; path = "NimbleKit/NimbleUI+UIButton.swift"; sourceTree = "<group>"; };
-		182FB9DE21998F7100B26E56 /* Nimble+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Nimble+UIImageView.swift"; path = "NimbleKit/Nimble+UIImageView.swift"; sourceTree = "<group>"; };
-		182FB9DF21998F7100B26E56 /* NimbleUI+UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NimbleUI+UILabel.swift"; path = "NimbleKit/NimbleUI+UILabel.swift"; sourceTree = "<group>"; };
-		182FB9E021998F7100B26E56 /* NimbleUI+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NimbleUI+UIView.swift"; path = "NimbleKit/NimbleUI+UIView.swift"; sourceTree = "<group>"; };
-		182FB9E121998F7100B26E56 /* NimbleUI+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NimbleUI+UITableView.swift"; path = "NimbleKit/NimbleUI+UITableView.swift"; sourceTree = "<group>"; };
 		2827C462D4ED7A88FA17B5C55895E102 /* Pods-NimbleDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NimbleDemo-frameworks.sh"; sourceTree = "<group>"; };
-		32A4E83207AFFB6B604E38A140DFEF0C /* NimbleUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleUI.swift; path = NimbleKit/NimbleUI.swift; sourceTree = "<group>"; };
 		45BF1761122B7AEBA58D7950FABCA001 /* Pods-NimbleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NimbleDemo.release.xcconfig"; sourceTree = "<group>"; };
-		5738427FB95A236447BADED519E05AAF /* NimbleKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NimbleKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69936B167560343130118EC8AE460CF2 /* Pods-NimbleDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NimbleDemo-umbrella.h"; sourceTree = "<group>"; };
 		768405DB88C6F77DE06133CB48466631 /* Pods-NimbleDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NimbleDemo-dummy.m"; sourceTree = "<group>"; };
 		77D5594660E8733FD65ADA269DC060FB /* Pods-NimbleDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NimbleDemo.modulemap"; sourceTree = "<group>"; };
 		8EA1078A46A2630E66137E7F60E59B8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912E37E8F6BDBE79D18D237BEAE7982C /* Pods-NimbleDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NimbleDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BDE8F0F67F31917C8FF2C1D1C114460 /* Pods-NimbleDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NimbleDemo-resources.sh"; sourceTree = "<group>"; };
-		A64666B866182649ED54D9714DB611E2 /* NimbleKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NimbleKit-dummy.m"; sourceTree = "<group>"; };
-		A8BB4CB2E51D248F0FC5F9927C591B3B /* Pods_NimbleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2B05952D3C2FAE4795962972D5220E3 /* NimbleKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NimbleKit.modulemap; sourceTree = "<group>"; };
-		B484923B0F1F4E67EE5D498955F98F46 /* NimbleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NimbleKit.xcconfig; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BB329F2C692E4458486EF0C9A7DA7372 /* NimbleKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NimbleKit-prefix.pch"; sourceTree = "<group>"; };
-		C1F900F1568994268A9FFCC6CF0687B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7C6F0E778217C195D1DC7A25B8E9951 /* Pods-NimbleDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NimbleDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E2DA852023B3E11351C9EB0D43C220A8 /* Pods_NimbleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NimbleDemo.framework; path = "Pods-NimbleDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE106CCA3EC7261A4FA033C7EBB67129 /* Pods-NimbleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NimbleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		327B28BD4CE45D6A37E922E72304F843 /* Frameworks */ = {
+		BB25E9E306BA1403DA889892F11FF8A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30682861BF904F007D51B2D6C640E27 /* Foundation.framework in Frameworks */,
-				4913D93C80472716623387E58F98B652 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3C2A30A6875134F3AFC862FC7B4C450 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				237529255E6F3BF607872B20D80FAFDA /* Foundation.framework in Frameworks */,
+				A2739BDC91BED0F6BC2210DAFBE6A1F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F5C5DC16B53C54FD24B071500C0790A /* Pods */ = {
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				691645A08646AB5D0DD391D3BCBC9891 /* NimbleKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3945236ABBB7EC97348E13686999C214 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5738427FB95A236447BADED519E05AAF /* NimbleKit.framework */,
-				A8BB4CB2E51D248F0FC5F9927C591B3B /* Pods_NimbleDemo.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		691645A08646AB5D0DD391D3BCBC9891 /* NimbleKit */ = {
-			isa = PBXGroup;
-			children = (
-				182FB9DC21998F7100B26E56 /* Nimble+NavigationItem.swift */,
-				182FB9DE21998F7100B26E56 /* Nimble+UIImageView.swift */,
-				182FB9DD21998F7100B26E56 /* NimbleUI+UIButton.swift */,
-				182FB9DF21998F7100B26E56 /* NimbleUI+UILabel.swift */,
-				182FB9E121998F7100B26E56 /* NimbleUI+UITableView.swift */,
-				182FB9E021998F7100B26E56 /* NimbleUI+UIView.swift */,
-				32A4E83207AFFB6B604E38A140DFEF0C /* NimbleUI.swift */,
-				75CA914DA5E5B5DF2F4B39C1AA84E646 /* Support Files */,
-			);
-			path = NimbleKit;
 			sourceTree = "<group>";
 		};
 		69A664628B977F1D5E371558D96756B2 /* Pods-NimbleDemo */ = {
@@ -152,27 +66,12 @@
 			path = "Target Support Files/Pods-NimbleDemo";
 			sourceTree = "<group>";
 		};
-		75CA914DA5E5B5DF2F4B39C1AA84E646 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C1F900F1568994268A9FFCC6CF0687B2 /* Info.plist */,
-				B2B05952D3C2FAE4795962972D5220E3 /* NimbleKit.modulemap */,
-				B484923B0F1F4E67EE5D498955F98F46 /* NimbleKit.xcconfig */,
-				A64666B866182649ED54D9714DB611E2 /* NimbleKit-dummy.m */,
-				BB329F2C692E4458486EF0C9A7DA7372 /* NimbleKit-prefix.pch */,
-				01F334A3F02D086D268E7615F819FD42 /* NimbleKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NimbleKit";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				2F5C5DC16B53C54FD24B071500C0790A /* Pods */,
-				3945236ABBB7EC97348E13686999C214 /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E318A6E9639978BB6051A32889103C34 /* Products */,
 				A983F303A4967A8B4FAB4587B93FF732 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -185,61 +84,52 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E318A6E9639978BB6051A32889103C34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2DA852023B3E11351C9EB0D43C220A8 /* Pods_NimbleDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B34DE62DDB31D1A900E7D2AA45721660 /* Headers */ = {
+		B134C3796D85707A3FB1F0A0075CBC1B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03879C23E54FFDE5770DE2049120A85D /* Pods-NimbleDemo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6979E4121FAEB523F469576B60E977D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E680B0FC488C77B35280FBC627AD037 /* NimbleKit-umbrella.h in Headers */,
+				2DF639AEFD2131999507A724705AA1A4 /* Pods-NimbleDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23E361B9B05E465EAFBB3D4E0987DC02 /* Pods-NimbleDemo */ = {
+		7C85B3F0D296E79584D8815E1D2F68C7 /* Pods-NimbleDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83EBE61B042A8AF985FA95E96D9F7F8E /* Build configuration list for PBXNativeTarget "Pods-NimbleDemo" */;
+			buildConfigurationList = BE408BEED84142C31F41FE1AEDC4349B /* Build configuration list for PBXNativeTarget "Pods-NimbleDemo" */;
 			buildPhases = (
-				BF6DAE969330BC029CAB36154C54C589 /* Sources */,
-				A3C2A30A6875134F3AFC862FC7B4C450 /* Frameworks */,
-				B34DE62DDB31D1A900E7D2AA45721660 /* Headers */,
+				B134C3796D85707A3FB1F0A0075CBC1B /* Headers */,
+				CEC91A2CC42821DAE2F4D1162C7CB7B0 /* Sources */,
+				BB25E9E306BA1403DA889892F11FF8A2 /* Frameworks */,
+				A31BB3047146094FCD52738B3B5D5756 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EFBA73CCD0443D6A93D10132C39A6B39 /* PBXTargetDependency */,
 			);
 			name = "Pods-NimbleDemo";
 			productName = "Pods-NimbleDemo";
-			productReference = A8BB4CB2E51D248F0FC5F9927C591B3B /* Pods_NimbleDemo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D159481E06D31F8A1880364E24590E88 /* NimbleKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BD20E396198015627D16853F5EA00E48 /* Build configuration list for PBXNativeTarget "NimbleKit" */;
-			buildPhases = (
-				3DFD9750AC6CAEE5FAA8960CD39399FA /* Sources */,
-				327B28BD4CE45D6A37E922E72304F843 /* Frameworks */,
-				F6979E4121FAEB523F469576B60E977D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NimbleKit;
-			productName = NimbleKit;
-			productReference = 5738427FB95A236447BADED519E05AAF /* NimbleKit.framework */;
+			productReference = E2DA852023B3E11351C9EB0D43C220A8 /* Pods_NimbleDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -259,53 +149,38 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3945236ABBB7EC97348E13686999C214 /* Products */;
+			productRefGroup = E318A6E9639978BB6051A32889103C34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D159481E06D31F8A1880364E24590E88 /* NimbleKit */,
-				23E361B9B05E465EAFBB3D4E0987DC02 /* Pods-NimbleDemo */,
+				7C85B3F0D296E79584D8815E1D2F68C7 /* Pods-NimbleDemo */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		3DFD9750AC6CAEE5FAA8960CD39399FA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		A31BB3047146094FCD52738B3B5D5756 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182FB9E421998F7100B26E56 /* Nimble+UIImageView.swift in Sources */,
-				182FB9E321998F7100B26E56 /* NimbleUI+UIButton.swift in Sources */,
-				182FB9E621998F7100B26E56 /* NimbleUI+UIView.swift in Sources */,
-				72790399502B0635BD86602649BDA7DA /* NimbleKit-dummy.m in Sources */,
-				184F5D110AA29C471D6C4E0AA9E4838A /* NimbleUI.swift in Sources */,
-				182FB9E221998F7100B26E56 /* Nimble+NavigationItem.swift in Sources */,
-				182FB9E721998F7100B26E56 /* NimbleUI+UITableView.swift in Sources */,
-				182FB9E521998F7100B26E56 /* NimbleUI+UILabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF6DAE969330BC029CAB36154C54C589 /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC91A2CC42821DAE2F4D1162C7CB7B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147D6452F62D0EAE438AAE610A7EB64D /* Pods-NimbleDemo-dummy.m in Sources */,
+				D631C8C4D5EBF90C5C4CD3A20750DB89 /* Pods-NimbleDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		EFBA73CCD0443D6A93D10132C39A6B39 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NimbleKit;
-			target = D159481E06D31F8A1880364E24590E88 /* NimbleKit */;
-			targetProxy = D21904A2E453B918FC7085BB414B4D3F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
+		98E98810EEEB96C99CB95CB91F4ADE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -359,84 +234,19 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		95BE30B0537E524C7B1711C141FD86D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45BF1761122B7AEBA58D7950FABCA001 /* Pods-NimbleDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NimbleDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NimbleDemo/Pods-NimbleDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C03C62DDB4A5BF0658D5EB6789167A27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B484923B0F1F4E67EE5D498955F98F46 /* NimbleKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NimbleKit/NimbleKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NimbleKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NimbleKit/NimbleKit.modulemap";
-				PRODUCT_MODULE_NAME = NimbleKit;
-				PRODUCT_NAME = NimbleKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
+		B97A7F6ACE1216BB5A2307CA83FC93C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -488,13 +298,56 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		D78C62C0657B742C531FCCC4065ECF67 /* Debug */ = {
+		DFBFC429B0E7E1D285E7A18BCE0A2C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45BF1761122B7AEBA58D7950FABCA001 /* Pods-NimbleDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NimbleDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NimbleDemo/Pods-NimbleDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC9CFA075E0B1FD2C6B0CB9D99478192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE106CCA3EC7261A4FA033C7EBB67129 /* Pods-NimbleDemo.debug.xcconfig */;
 			buildSettings = {
@@ -512,7 +365,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-NimbleDemo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-NimbleDemo/Pods-NimbleDemo.modulemap";
 				OTHER_LDFLAGS = "";
@@ -522,46 +379,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		F1EF4D81A520193ADCCAD68854BF7717 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B484923B0F1F4E67EE5D498955F98F46 /* NimbleKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NimbleKit/NimbleKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NimbleKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NimbleKit/NimbleKit.modulemap";
-				PRODUCT_MODULE_NAME = NimbleKit;
-				PRODUCT_NAME = NimbleKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -569,26 +391,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */,
-				CD8324D57CD462761E218EEA4EA91EC7 /* Release */,
+				98E98810EEEB96C99CB95CB91F4ADE0A /* Debug */,
+				B97A7F6ACE1216BB5A2307CA83FC93C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83EBE61B042A8AF985FA95E96D9F7F8E /* Build configuration list for PBXNativeTarget "Pods-NimbleDemo" */ = {
+		BE408BEED84142C31F41FE1AEDC4349B /* Build configuration list for PBXNativeTarget "Pods-NimbleDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D78C62C0657B742C531FCCC4065ECF67 /* Debug */,
-				95BE30B0537E524C7B1711C141FD86D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BD20E396198015627D16853F5EA00E48 /* Build configuration list for PBXNativeTarget "NimbleKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C03C62DDB4A5BF0658D5EB6789167A27 /* Debug */,
-				F1EF4D81A520193ADCCAD68854BF7717 /* Release */,
+				EC9CFA075E0B1FD2C6B0CB9D99478192 /* Debug */,
+				DFBFC429B0E7E1D285E7A18BCE0A2C8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

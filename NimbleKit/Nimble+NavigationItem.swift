@@ -5,16 +5,17 @@
 //  Created by 周正飞 on 2018/11/12.
 //
 
-import Foundation
+import UIKit
+
 public enum NavigationItemDirection {
     case left
     case right
 }
-public enum NavigationItemStyle {
-    case text(String)
+
+public enum NavigationItemType {
+    case text(NSAttributedString)
     case image(UIImage)
 }
-
 
 extension NimbleUI where Type: UINavigationItem {
  
@@ -26,14 +27,23 @@ extension NimbleUI where Type: UINavigationItem {
     
     @discardableResult
     public func item(_ direction: NavigationItemDirection,
-                     _ style: NavigationItemStyle,
-                     _ action: @escaping () -> ()) -> Self {
-        var barItem: UIBarButtonItem
-        switch style {
+                     type: NavigationItemType,
+                     action:  (() -> ())?,
+                    size: CGSize = CGSize.zero) -> Self {
+        let barItem: UIBarButtonItem
+        let itemView: UIView
+        switch type {
         case .text(let text):
-            barItem = UIBarButtonItem.create(title: text, action: action)
+            itemView = UILabel().nb.size(size).attributeText(text).base
+            barItem = UIBarButtonItem(customView: itemView)
         case .image(let image):
-            barItem = UIBarButtonItem.create(image: image, action: action)
+            itemView = UIImageView().nb.size(size).image(image).base
+            barItem = UIBarButtonItem(customView: itemView)
+        }
+        itemView.backgroundColor = .red
+        itemView.isUserInteractionEnabled = true
+        if let action = action {
+            itemView.addGestureRecognizer(TapGesture(handler: action))
         }
         switch direction {
         case .left:
@@ -43,28 +53,34 @@ extension NimbleUI where Type: UINavigationItem {
         }
         return self
     }
-}
-/// 快捷方便的为按钮添加事件
-private var BarItemActionKey: Void?
-extension UIBarButtonItem {
     
-     typealias TouchedClosure = () -> Void
-    /// 快速添加事件
-    static func create(title: String,
-                            action: @escaping TouchedClosure) -> UIBarButtonItem {
-        objc_setAssociatedObject(self, &BarItemActionKey, action, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-        return self.init(title: title, style: .plain, target: self, action: #selector(touchClick))
-    }
-    
-    static func create(image: UIImage,
-                     action: @escaping TouchedClosure) -> UIBarButtonItem {
-        objc_setAssociatedObject(self, &BarItemActionKey, action, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-        return self.init(image: image, style: .plain, target: self, action: #selector(touchClick))
-    }
-    
-    @objc private func touchClick() {
-        if let closure = objc_getAssociatedObject(self,&BarItemActionKey) as? UIBarButtonItem.TouchedClosure {
-            closure()
+    @discardableResult
+    public func item(_ direction: NavigationItemDirection,
+                     _ customView: UIView,
+                     action: (() -> ())?) -> Self {
+        if let action = action {
+            customView.addGestureRecognizer(TapGesture(handler: action))
         }
+        switch direction {
+        case .left:
+            base.leftBarButtonItem = UIBarButtonItem(customView: customView)
+        case .right:
+            base.rightBarButtonItem = UIBarButtonItem(customView: customView)
+        }
+        return self
+    }
+}
+class TapGesture: UITapGestureRecognizer {
+    var tapAction = TapGestureAction()
+    init(handler: @escaping () -> ()) {
+        tapAction.actionHandler = handler
+        super.init(target: tapAction, action: #selector(tapAction.tapAction))
+    }
+}
+
+class TapGestureAction {
+    var actionHandler: (() -> ())?
+    @objc func tapAction() {
+        actionHandler?()
     }
 }

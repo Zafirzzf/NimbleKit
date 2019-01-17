@@ -5,7 +5,7 @@
 //  Created by 周正飞 on 2018/11/12.
 //
 
-import Foundation
+import UIKit
 
 //MARK: Size And Origin
 extension NimbleUI where Type: UIView {
@@ -43,6 +43,16 @@ extension NimbleUI where Type: UIView {
     }
     
     @discardableResult
+    public func size(_ size: CGFloat) -> Self {
+        return width(size).height(size)
+    }
+    
+    @discardableResult
+    public func size(_ size: CGSize) -> Self {
+        return width(size.width).height(size.height)
+    }
+    
+    @discardableResult
     public func centerX(_ value: CGFloat) -> Self {
         base.center.x = value
         return self
@@ -51,6 +61,12 @@ extension NimbleUI where Type: UIView {
     @discardableResult
     public func centerY(_ value: CGFloat) -> Self {
         base.center.y = value
+        return self
+    }
+    
+    @discardableResult
+    public func center(_ value: CGPoint) -> Self {
+        base.center = value
         return self
     }
 }

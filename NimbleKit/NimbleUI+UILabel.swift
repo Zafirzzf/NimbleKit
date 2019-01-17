@@ -5,7 +5,7 @@
 //  Created by 周正飞 on 2018/11/12.
 //
 
-import Foundation
+import UIKit
 
 extension NimbleUI where Type: UILabel {
     
@@ -46,8 +46,8 @@ extension NimbleUI where Type: UILabel {
     }
     
     @discardableResult
-    public func adjustFontSize(_ adjust: Bool) -> Self {
-        base.adjustsFontSizeToFitWidth = adjust
+    public func adjustFontSize() -> Self {
+        base.adjustsFontSizeToFitWidth = true
         return self
     }
 }

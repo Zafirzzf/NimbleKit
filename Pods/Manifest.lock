@@ -1,16 +1,3 @@
-PODS:
-  - NimbleKit (1.1.1)
+PODFILE CHECKSUM: 566ad4cd285f2f592ed40993eeb93e98472ebaec
 
-DEPENDENCIES:
-  - NimbleKit
-
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - NimbleKit
-
-SPEC CHECKSUMS:
-  NimbleKit: 17ae27639c7c5d027349a0630b2cc8fcc1fdc6b1
-
-PODFILE CHECKSUM: 277101022ec3d923434812b4d2f89a0be6fafaf2
-
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
