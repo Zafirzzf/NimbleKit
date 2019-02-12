@@ -68,6 +68,18 @@ let label = UILabel().nb.textColor(.white).text("aaa").base
 override func viewDidLoad() {
 }
 ```
+## setup a TableView now:
+```
+tableView.nb.separator(style: .none)
+    .backgroundColor(UIColor.Common.grayF7F7F7)
+    .register(UINib(nibName: cellID, bundle: nil), cellIdentifier: cellID)
+    .register(MineBonusMsgCell.self, cellIdentifier: msgCellID)
+    .sectionHeaderHeight { _ in 15 }
+    .rowHeightOf { wSelf.vm.rowHeight(of: $0) }
+    .didSelect { wSelf.vm.handleClickBonusItem($0) }
+    .dataSource(wSelf.vm)
+    .addToSuperView(self.view)
+```
 
 ## Adjust a view position
 
