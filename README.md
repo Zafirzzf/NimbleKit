@@ -18,6 +18,7 @@ editButton.setTitleColor(UIColor.red, for: .normal)
 editButton.setTitleColor(UIColor.brown, for: .selected)
 editButton.backgroundColor = UIColor.red
 editButton.layer.cornerRadius = 10
+editButton.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
 ....
 ```
 
@@ -32,18 +33,52 @@ let editButton = UIButton().nb
 	.titleColor(UIColor.brown, state: .selected)
 	.backgroundColor(UIColor.red)
 	.cornerRadius(10).base
+	.whenTap { 
+	  // clickButtonAction
+	}
 	....
 ```
 
 Don't need more assignment operation.
 
-
-
-## Create a label as member
-
 ### before
 
 ```
+
+## setup a TableView now:
+```
+tableView.nb.separator(style: .none)
+    .backgroundColor(UIColor.Common.grayF7F7F7)
+    .register(UINib(nibName: cellID, bundle: nil), cellIdentifier: cellID)
+    .register(MineBonusMsgCell.self, cellIdentifier: msgCellID)
+    .sectionHeaderHeight { _ in 15 }
+    .rowHeightOf { wSelf.vm.rowHeight(of: $0) } // 返回行高
+    .didSelect { wSelf.vm.handleClickBonusItem($0) } // 点击某一行cell
+    .dataSource(wSelf.vm)
+    .addToSuperView(self.view)
+```
+
+## Adjust a view position
+
+
+### Sometimes you need do this
+
+```
+let view = UIView()
+view.frame.size.width = 100
+view.frame.size.height = 100
+view.center.x = 150
+view.center.y = 150
+```
+
+### now, for any UIView
+
+```
+view.nb.width(100).height(100).centerX(150).centerY(150).base
+```
+
+## Create a label as member
+
 class ViewController: UIViewController {
 
 /// property
@@ -67,35 +102,4 @@ let label = UILabel().nb.textColor(.white).text("aaa").base
 
 override func viewDidLoad() {
 }
-```
-## setup a TableView now:
-```
-tableView.nb.separator(style: .none)
-    .backgroundColor(UIColor.Common.grayF7F7F7)
-    .register(UINib(nibName: cellID, bundle: nil), cellIdentifier: cellID)
-    .register(MineBonusMsgCell.self, cellIdentifier: msgCellID)
-    .sectionHeaderHeight { _ in 15 }
-    .rowHeightOf { wSelf.vm.rowHeight(of: $0) }
-    .didSelect { wSelf.vm.handleClickBonusItem($0) }
-    .dataSource(wSelf.vm)
-    .addToSuperView(self.view)
-```
-
-## Adjust a view position
-
-
-### Sometimes you need do this
-
-```
-let view = UIView()
-view.frame.size.width = 100
-view.frame.size.height = 100
-view.center.x = 150
-view.center.y = 150
-```
-
-### now, for any UIView
-
-```
-view.nb.width(100).height(100).centerX(150).centerY(150).base
 ```
